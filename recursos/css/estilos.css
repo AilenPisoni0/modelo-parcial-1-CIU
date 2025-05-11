@@ -1,0 +1,90 @@
+#main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #dee2e6;
+}
+
+ul{
+    list-style: none !important;
+    padding: 0px !important;
+    margin-bottom: 0px;
+}
+
+.navbar-lista{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-lista .navbar-item a{
+    color: #000;
+    padding: 1rem;
+}
+
+
+.navbar-lista .navbar-item a:hover{
+    background-color: #dee2e6;
+    border-radius: 10px;
+}
+
+main{
+    background-color: #f7f7f7;
+    padding: 0px 2rem;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer{
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid #dee2e6;
+}
+
+#perfil-title, #materias-ins-title{
+    margin-bottom: 2rem;
+}
+
+#container-materias, #container-materias-ins, #container-materias-recomendadas{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#container-materias-recomendadas{
+    margin-bottom: 2rem;
+}
+
+#container-materias .card > * {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column;
+}
+
+#materias-recomendadas-title{
+    margin: 2rem 0px;
+
+}
+@keyframes shake {
+    0%, 100% { transform: scale(1.05) translateX(0); }
+    25% { transform: scale(1.05) translateX(-3px); }
+    50% { transform: scale(1.05) translateX(3px); }
+    75% { transform: scale(1.05) translateX(-2px); }
+}
+
+.materia-destacada {
+    animation: shake 0.4s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+    position: relative;
+}

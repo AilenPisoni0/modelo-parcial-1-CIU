@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nombre": "Construcción de interfaces de usuario",
+        "cupo": 20,
+        "cantidadDeInscriptos": 12,
+        "cuatrimestre": "1/2025",
+        "descripcion": "algo",
+        "esRecomendada": true,
+        "estaInscripto": true
+    },
+    {
+        "id": 2,
+        "nombre": "Materia UnaHur",
+        "cupo": 30,
+        "cantidadDeInscriptos": 30,
+        "cuatrimestre": "1/2025",
+        "descripcion": "algo",
+        "esRecomendada": false,
+        "estaInscripto": false
+    },
+    {
+        "id": 3,
+        "nombre": "Estrategias de Persistencia",
+        "cupo": 20,
+        "cantidadDeInscriptos": 15,
+        "cuatrimestre": "1/2025",
+        "descripcion": "algo",
+        "esRecomendada": true,
+        "estaInscripto": true
+    },
+    {
+        "id": 4,
+        "nombre": "Nuevos entornos",
+        "cupo": 20,
+        "cantidadDeInscriptos": 19,
+        "cuatrimestre": "1/2025",
+        "descripcion": "algo",
+        "esRecomendada": true,
+        "estaInscripto": false
+    },
+    {
+        "id": 5,
+        "nombre": "Matemática I",
+        "cupo": 20,
+        "cantidadDeInscriptos": 15,
+        "cuatrimestre": "1/2025",
+        "descripcion": "algo",
+        "esRecomendada": false,
+        "estaInscripto": false
+    },
+    {
+        "id": 6,
+        "nombre": "Objetos I",
+        "cupo": 20,
+        "cantidadDeInscriptos": 20,
+        "cuatrimestre": "1/2025",
+        "descripcion": "algo",
+        "esRecomendada": false,
+        "estaInscripto": true
+    },
+    {
+        "id": 7,
+        "nombre": "Objetos II",
+        "cupo": 20,
+        "cantidadDeInscriptos": 15,
+        "cuatrimestre": "1/2025",
+        "descripcion": "algo",
+        "esRecomendada": true,
+        "estaInscripto": false
+    }
+]
