@@ -1,15 +1,21 @@
 let materias = [];
 let materiasInscriptas = [];
 
-fetch("../recursos/data/materias.json")
-    .then(res => res.json())
-    .then(data => {
-        materias = data;
-        mostrarMateriasInscriptas();
-    })
-    .catch(error => {
-        console.error("Error al cargar materias:", error);
-    });
+obtenerMaterias();
+
+async function obtenerMaterias() {
+  try {
+    const response = await fetch("../recursos/data/materias.json");
+    if (!response.ok) {
+      throw new Error("Error mensaje" + response.status);
+    }
+    const data = await response.json();
+    materias = data;
+    mostrarMateriasInscriptas();
+  } catch (error) {
+    console.error("Error en la carga de las materias");
+  }
+}
 
 function mostrarMateriasInscriptas(){
     materiasInscriptas = materias.filter(materia => materia.estaInscripto);

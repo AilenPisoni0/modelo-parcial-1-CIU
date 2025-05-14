@@ -53,6 +53,20 @@ function inscribirseAMateria(id, nombre){
         if(materiaRecomendada){
             materiaRecomendada.style.display = "none";
         }
+        materiasRecomendadas = materiasRecomendadas.filter(materia => materia.id !== id);
+        materiasParaInscribirse = materiasParaInscribirse.filter(materia => materia.id !== id);
+        if (materiasParaInscribirse.length === 0) {
+            const materiasTitle = document.getElementById("materias-ins-title");
+            const materiasContainer = document.getElementById("container-materias");
+            materiasTitle.style.display = 'none';
+            materiasContainer.innerHTML = '';
+        }
+        if (materiasRecomendadas.length === 0) {
+            const materiasRecomendadasTitle = document.getElementById("materias-recomendadas-title");
+            const materiasRecomendadasContainer = document.getElementById("container-materias-recomendadas");
+            materiasRecomendadasTitle.style.display = 'none';
+            materiasRecomendadasContainer.innerHTML = '';
+        }
     }
 }
 
@@ -72,7 +86,7 @@ function mostrarMateriasRecomendadas(){
                 <button data-id="materiaRecomendada_${materia.id}" class="btn btn-primary">${materia.nombre}</button>`
                 
         const boton = card.querySelector("button");
-        boton.addEventListener("click", () => llevarAMateria(materia.id, materia.nombre));
+        boton.addEventListener("click", () => llevarAMateria(materia.id));
 
         section.appendChild(card);
     });
